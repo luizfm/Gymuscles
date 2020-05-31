@@ -1,4 +1,10 @@
 const express = require('express')
 const routes = express.Router()
-const Instructor = require('../src/app/controllers/Instructor')
-const Member = require('../src/app/controllers/Member')
+const instructors = require('./app/controllers/instructors')
+const members = require('./app/controllers/members')
+
+routes.get("/", function(req, res) {
+    return res.send('working')
+})
+
+module.exports = routes
