@@ -9,7 +9,7 @@ routes.get('/', Home.index)
 /* ===== instructors ===== */
 
 routes.get('/instructors', Instructors.index)
-
+routes.get('/instructors/create', Instructors.create)
 /* ===== members ====== */
 
 routes.get('/members', Members.index)

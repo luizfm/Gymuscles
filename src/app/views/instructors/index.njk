@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block head %} 
+    <title> Gymuscles | Instructors </title>
+{% endblock %}
+
+{%block content %}
+
+<div class="cards">
+    <div class="logo_in_site">
+        <a href="/">
+            <img src="images/logo_in_site.jpg">
+        </a>
+    </div> 
+    <a href="/instructors/create">
+        <div class="item">
+            <div class="image_container">
+                <img src="https://rsnoticiasweb.com.br/wp-content/uploads/2020/05/sal%C3%A3o-academia.jpeg">
+            </div>
+            <div class="option">
+                <h2>Novo Instrutor</h2>
+            </div>
+        </div>
+    </a>
+    <a href="">
+        <div class="item">
+            <div class="image_container_list">
+                <img src="https://obesimed.com.br/wp-content/uploads/2018/12/o-papel-do-educador-fisico-no-tratamento-da-obesidade_01.jpg">
+            </div>
+            <div class="option">
+                <h2>Lista de Instrutores</h2>
+            </div>
+        </div>
+    </a>
+    <a href="">
+        <div class="item">
+            <div class="image_container_delete">
+                <img src="https://idealmt.com.br/wp-content/uploads/2019/08/shutterstock_385057642.jpg">
+            </div>
+            <div class="option">
+                <h2>Excluir Instrutor</h2>
+            </div>
+        </div>
+    </a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title> Gymuscles | Novo instrutor </title>
+{% endblock %}
+
+{% block content %}
+<div class="cards">
+    <div class="logo_in_site">
+        <a href="/">
+            <img src="./images/Logo_in_site.jpg">
+        </a>
+    </div> 
+    <div class="container">
+        
+        <form class="form" method="POST" action="/">
+            <section class="avatar" style="background: url(https://source.unsplash.com/collection/9419482/500x500) no-repeat center center / cover">
+            
+            </section>
+            <section class="details">
+
+                <h3>Novo Instrutor</h3>
+
+                {%include 'instructors/fields.njk' %}
+
+            </section>
+        </form>
+    </div>
+</div>
+{% endblock %}
