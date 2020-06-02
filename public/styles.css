@@ -135,7 +135,7 @@ body {
     gap: 16px;
 }
 
-.cards a:not(:first-child) {
+.cards .links:not(:first-child) {
     width: 400px;
     height: 800px;
 
@@ -155,7 +155,7 @@ body {
     height: 100%;
 }
 
-.cards a:hover{
+.cards .links:hover{
     border-color: black;
     height: 95%;
 }
@@ -243,3 +243,89 @@ body {
     letter-spacing: 1px;
     color: #999999;
 }
+
+
+/* ========================= FIELDS ======================== */
+
+.cards .container form .box {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    padding: 24px;
+    font-size: 16px;
+    line-height: 26px;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+
+    align-items: center;
+}
+
+
+
+.cards .container form .box div:first-child {
+    color: #555555;
+    text-align: center;
+    margin-right: 32px;
+}
+
+.cards .container form .box input {
+    border: 1px solid #ececec;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;  
+}
+
+.cards .container form .box span {
+    background-color: var(--secondary-color);
+
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 16px;
+    width: 40%;
+    padding: 8px;
+    letter-spacing: 1px;
+}
+
+.cards .container form input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="url"] {
+    padding: 16px;
+}
+
+.button {
+    margin-top: 32px;
+    width: 90%;
+    padding: 16px 8px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+
+    transition: 200ms;
+}
+
+.container .details a {
+    text-decoration: none;
+    padding: 8px 150px;
+
+    
+}
+
+.button:hover {
+    background-color: #F3D548;
+}
+
+
+
+
+
